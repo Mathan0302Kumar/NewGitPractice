@@ -73,7 +73,7 @@ public class Training1 {
 
 		
 		System.out.println(afterList);
-		System.out.println(beforeList);
+		System.out.println("mad");
 
 
 		if (beforeList.equals(afterList)) {
