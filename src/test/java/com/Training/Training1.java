@@ -27,15 +27,16 @@ public class Training1 {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5000));
 
 		WebElement closeBtn = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"));
-		closeBtn.click();
+		closeBtn.clear();
 
 		WebElement searchBox = driver.findElement(By.name("q"));
 		searchBox.sendKeys("Xplade");
+		searchBox.clear();
 
 		WebElement enterBox = driver.findElement(By.xpath("//button[@class='L0Z3Pu']"));
 		
 
-		driver.manage().window().maximize();
+		driver.get("");
 
 		driver.close();
 		
@@ -67,9 +68,9 @@ public class Training1 {
 
 		}
 
-		Collections.sort(beforeList);
-		System.out.println(beforeList);
+		
 		System.out.println(afterList);
+		System.out.println(beforeList);
 
 		if (beforeList.equals(afterList)) {
 			System.out.println("true");
