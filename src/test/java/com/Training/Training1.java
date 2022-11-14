@@ -68,9 +68,13 @@ public class Training1 {
 
 		}
 
+
+		Collections.sort(beforeList);
+
 		
 		System.out.println(afterList);
 		System.out.println(beforeList);
+
 
 		if (beforeList.equals(afterList)) {
 			System.out.println("true");
