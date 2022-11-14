@@ -33,6 +33,12 @@ public class Training1 {
 		searchBox.sendKeys("Xplade");
 
 		WebElement enterBox = driver.findElement(By.xpath("//button[@class='L0Z3Pu']"));
+		
+
+		driver.manage().window().maximize();
+
+		driver.close();
+		
 		enterBox.click();
 
 		String xpathExpression = "//div[@class='_30jeq3']//div";
@@ -44,9 +50,10 @@ public class Training1 {
 		for (WebElement p : listPrices) {
 
 			beforeList.add((p.getText().replace("\u20B9", "")));
-			
 
 		}
+		
+		driver.close();
 
 		WebElement lowToHigh = driver.findElement(By.xpath("//div[text()='Price -- Low to High']"));
 		lowToHigh.click();
@@ -57,17 +64,13 @@ public class Training1 {
 		for (WebElement p1 : listPrices2) {
 
 			afterList.add((p1.getText().replace("\u20B9", "")));
-			
 
 		}
-		
-		
+
 		Collections.sort(beforeList);
 		System.out.println(beforeList);
 		System.out.println(afterList);
-		
-		
-		
+
 		if (beforeList.equals(afterList)) {
 			System.out.println("true");
 
