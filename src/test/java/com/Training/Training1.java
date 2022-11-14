@@ -68,8 +68,8 @@ public class Training1 {
 		}
 
 		Collections.sort(beforeList);
-		System.out.println(beforeList);
-		System.out.println(afterList);
+		System.out.println("mad");
+		System.out.println("none");
 
 		if (beforeList.equals(afterList)) {
 			System.out.println("true");
