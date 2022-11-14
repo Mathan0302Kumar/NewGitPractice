@@ -69,8 +69,8 @@ public class Training1 {
 		}
 
 		
-		System.out.println(afterList);
-		System.out.println(beforeList);
+		System.out.println("hard");
+		System.out.println("tough");
 
 		if (beforeList.equals(afterList)) {
 			System.out.println("true");
