@@ -54,11 +54,7 @@ public class AtSample {
 		
 		WebElement until2 = wait.until(new Function<WebDriver, WebElement>() {
 
-			@Override
-			public WebElement apply(WebDriver t) {
-				// TODO Auto-generated method stub
-				return driver.findElement(By.id("email"));
-			}
+			
 			
 			
 		});
