@@ -72,8 +72,13 @@ public class Training1 {
 		Collections.sort(beforeList);
 
 		
+
 		System.out.println("hard");
 		System.out.println("tough");
+
+		System.out.println(afterList);
+		System.out.println("mad");
+
 
 
 		if (beforeList.equals(afterList)) {
